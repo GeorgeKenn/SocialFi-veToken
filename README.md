@@ -1,10 +1,6 @@
 # SocialFi-veToken
 A SocialFi platform leveraging the veToken model for sustainable creator-fan engagement.
 
-# SocialFi veToken Platform
-
-A SocialFi platform leveraging the veToken model for sustainable creator-fan engagement.
-
 ## Features
 - Token locking and governance
 - Creator revenue distribution
