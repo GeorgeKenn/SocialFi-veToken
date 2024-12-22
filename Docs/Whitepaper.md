@@ -76,7 +76,6 @@ By contrast, decentralized finance (DeFi) projects like **Velodrome**, **Curve**
 **Emissions (Optional):**  
 - Temporary emissions may bootstrap the ecosystem in early stages.  
 - These emissions can decay over time to avoid perpetual inflation.
-- 
 
                           ┌─────────────────────┐
                           │   Advertisers &     │
@@ -125,8 +124,7 @@ Meanwhile…
                                └───────────────────────────────────────┘
 
 
-Creators can claim their portion of the treasury revenue.
-Encourages creators to keep producing quality content to maintain or increase voter support.
+
 ---
 
 # 5. Platform Architecture
