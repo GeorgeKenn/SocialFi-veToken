@@ -76,7 +76,57 @@ By contrast, decentralized finance (DeFi) projects like **Velodrome**, **Curve**
 **Emissions (Optional):**  
 - Temporary emissions may bootstrap the ecosystem in early stages.  
 - These emissions can decay over time to avoid perpetual inflation.
+- 
 
+                          ┌─────────────────────┐
+                          │   Advertisers &     │
+                          │   Sponsors, etc.    │
+                          └─────────┬───────────┘
+                                    │ (1) Pays fees/revenue
+                                    v
+                     ┌───────────────────────────────────┐
+                     │    [PROJECT NAME] Treasury       │
+                     │  (collects all platform fees)    │
+                     └────────────────────┬─────────────┘
+                                          │ (2) At end of each epoch,
+                                          │     calculates rewards 
+                                          v
+       ┌───────────────────────┐               ┌──────────────────────────┐
+       │     veToken Holder    │<--------------│ Reward Distribution Logic│
+       │ (locked token => vote)│ (4) receives  └──────────────────────────┘
+       │   votes on “pools”    │    share of fees
+       └───────────┬───────────┘
+                   │ (3) votes 
+                   │     (which creators get how much?)
+                   v
+     ┌──────────────────────┐
+     │   Creator's Pool     │
+     │ (represents a creator│
+     │   or content group)  │
+     └───────┬──────────────┘
+             │ (5) receives share of
+             │     fees if voted in
+             v
+       ┌────────────┐
+       │   Creator  │
+       │ (withdraws │
+       │  rewards)  │
+       └────────────┘
+
+Meanwhile…
+
+┌───────────────────┐      (A) Buys tokens
+│      Fan/User     │----------------------------------┐
+└───────────────────┘                                 │
+                                                      v
+                               ┌───────────────────────────────────────┐
+                               │  Lock Token for veToken (vote power) │
+                               │     + Gains potential reward share    │
+                               └───────────────────────────────────────┘
+
+
+Creators can claim their portion of the treasury revenue.
+Encourages creators to keep producing quality content to maintain or increase voter support.
 ---
 
 # 5. Platform Architecture
