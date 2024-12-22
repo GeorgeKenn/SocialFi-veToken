@@ -76,7 +76,33 @@ By contrast, decentralized finance (DeFi) projects like **Velodrome**, **Curve**
 **Emissions (Optional):**  
 - Temporary emissions may bootstrap the ecosystem in early stages.  
 - These emissions can decay over time to avoid perpetual inflation.
+1. **Creators**  
+   - YouTubers, Twitch streamers, musicians, artists, etc.  
+   - Have a dedicated “creator pool” on-chain that receives votes → revenue share.  
 
+2. **Fans / Users**  
+   - Enjoy the creator’s content (often still on Web2).  
+   - May purchase and **lock** the platform’s token to gain **veTokens** (voting power).  
+
+3. **veToken Holders**  
+   - Users who lock the native token for a specific duration (e.g., up to 4 years).  
+   - Longer lock → greater voting power.  
+   - Earn a portion of overall platform fees for voting.  
+
+4. **Advertisers / Sponsors**  
+   - Pay the platform for ad space, sponsorships, brand placements.  
+   - Revenue flows into [PROJECT NAME]’s on-chain treasury for distribution.  
+
+5. **Platform / Treasury**  
+   - Smart contracts that **collect** all fees (ads, sponsorship deals, NFT minting fees, subscription revenue, etc.).  
+   - Distributes these fees to **veToken holders** and **creator pools** based on community votes.
+
+---
+
+## 3. Architecture & Flow
+
+
+```plaintext
                           ┌─────────────────────┐
                           │   Advertisers &     │
                           │   Sponsors, etc.    │
@@ -84,15 +110,15 @@ By contrast, decentralized finance (DeFi) projects like **Velodrome**, **Curve**
                                     │ (1) Pays fees/revenue
                                     v
                      ┌───────────────────────────────────┐
-                     │    [PROJECT NAME] Treasury       │
-                     │  (collects all platform fees)    │
+                     │   [PROJECT NAME] Treasury        │
+                     │ (collects all platform fees)     │
                      └────────────────────┬─────────────┘
                                           │ (2) At end of each epoch,
                                           │     calculates rewards 
                                           v
-       ┌───────────────────────┐               ┌──────────────────────────┐
-       │     veToken Holder    │<--------------│ Reward Distribution Logic│
-       │ (locked token => vote)│ (4) receives  └──────────────────────────┘
+       ┌───────────────────────┐                ┌──────────────────────────┐
+       │    veToken Holder     │<---------------│ Reward Distribution Logic│
+       │ (locked token => vote)│ (4) receives   └──────────────────────────┘
        │   votes on “pools”    │    share of fees
        └───────────┬───────────┘
                    │ (3) votes 
@@ -116,13 +142,12 @@ Meanwhile…
 
 ┌───────────────────┐      (A) Buys tokens
 │      Fan/User     │----------------------------------┐
-└───────────────────┘                                 │
-                                                      v
-                               ┌───────────────────────────────────────┐
-                               │  Lock Token for veToken (vote power) │
-                               │     + Gains potential reward share    │
-                               └───────────────────────────────────────┘
-
+└───────────────────┘                                  │
+                                                       v
+                                ┌───────────────────────────────────────┐
+                                │  Lock Token for veToken (vote power) │
+                                │     + Gains potential reward share    │
+                                └───────────────────────────────────────┘
 
 
 ---
