@@ -1,6 +1,11 @@
 # Whitepaper: SocialFi veToken Model
 
 ---
+**[COMPANY NAME]** is building a **SocialFi** platform where **creators** and **fans** share real revenue from online content—rather than letting big tech capture it all. We’re combining the **long-term token mechanics** of DeFi (via a “veToken” model) with the **reach** of Web2 platforms like YouTube or Twitch. By locking our native token, fans get to **vote** on which creators deserve funding. Creators who deliver quality work earn **direct** revenue from the platform, not just from ad pennies.
+
+Imagine **YouTube** if it let the **viewers** and **content creators** split most of the ad money **directly**—no middlemen taking huge cuts. On our platform, **fans** can buy some “points” (tokens), **lock** them for a while, and **vote** for their favorite YouTuber or artist to get a slice of the money that comes in from ads or sponsors. The fans also **get a share** of that money just for voting and being involved. This way, **everybody** benefits from good content, and no one has to rely on one big company to make all the rules.
+
+
 
 # 1. Introduction
 
